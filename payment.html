@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JAVA</title>
+
+<h1>Java example calculator</h1>
+<script>
+function add() {
+  let PV = document.getElementById("fn").value;
+  let r = document.getElementById("sn").value;
+  let n = document.getElementById("sn").value;
+  let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
+  document.getElementById("ans").innerHTML = PV;
+}
+</script>
+</head>
+<body>
+    <h3>This is a sample Java and HTML doc.</h3>
+    <p>Present value-# you want to borrow: <input id="fn"> <br>
+    Years: <input id="sn"> <br>
+    Interest: <input id="tn"> <br>
+    <button onclick="add()"> Add the Numbers </button>
+    </p>
+
+  <p>
+    If you get a $<span id="fn"></span> loan for <span id="tn"></span> years at an interest rate of <span id="sn"></span>%, your monthly paymnt will be $<span id="P"></span></p>
+
+ 
+</body>
+</html>
